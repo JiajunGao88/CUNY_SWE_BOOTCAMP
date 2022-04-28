@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jiajun Gao - Week 2 Project 2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+      // function
+      // Example (1) function without parameters nor returing value
+      function displayMsg(){
+        console.log("Welcome to the program!");
+      }
+      //var saveMsg = displayMsg();
+      displayMsg();
+      // console.log(`Peter Pan ${saveMsg}`);
+      console.log(`Peter Pan`);
+
+      //example (2)function without parameters nor returing value
+      function message(){
+          var x =7;
+          var y =-3;
+          var z ="Peter Pan";
+          var sum = x+ y;
+          return sum;
+      }
+      var valueMsg =  message();
+      var value2 = 10 + message();
+      console.log(`The value from function message is :${valueMsg}`);
+      console.log(`Sum of 10 and message() function: ${value2}`);
+      console.log(message());
+
+      //example (2)function without parameters nor returing value
+      //Write a function that will take a parameter to console a messgae
+      function upperMessage(message){
+         var upper = message.toUpperCase();
+         console.log(upper);
+      }
+      upperMessage('Hello!');
+      var name = prompt(`Enter a name: `);
+      upperMessage(name);
+
+      //example 4) function with parameters and returning value
+      function doubleNumer(number){
+        var numDouble = 2*number;
+        var numTriple = 3*number;
+        return numDouble;
+      }
+      var userNum = parseInt(prompt(`Enter a number: `));
+      var retDouble = doubleNumer(userNum);
+
+
+      //example 5) function with two parameters and
+      function summation(num1,num2){
+        var sum = num1 + num2;
+        return sum;
+      }
+
+      var n1 = parseInt(prompt('Enter a number:'));
+      var n2 = parseInt(prompt(`Enter another number:`));
+
+      var sum1 = summation(n1,n2);
+      console.log(`The summation funtion returns: ${sum1}`);
+
+      //BUILD-IN FUNCTION IN JS
+      var numPI = Math.PI;
+      var n1 = Math.round(numPI);//round()returns the nearest interger
+      var n2 = Math.ceil(numPI);//return the value rounded up to its
+
+      //example (6) create a function that randomly pick a value from an array
+      var colors = [`red`,`green`,`blue`,`yellow`,`orange`];
+      //the parameter of function colorPick is colorL, which is the lenght of the array
+      function colorPick(color){
+        pick = Math.floor(Math.random()*color);
+        return pick;
+      }
+      var lengthArray = colors.length;
+      var indexColor = colorPick(lengthArray);
+      console.log(colors[indexColor]);
+      //     console.log("WEEK 2 Project");
+      //
+      //     function getName(){
+      //     var userName = prompt("Enter a name: ");
+      //
+      //
+      //     var c = parseInt(userName);
+      //     var checkInt = isNaN(c);
+      //
+      //     while(checkInt!=true){
+      //       var userName = prompt("You entered a number, please enter your name again: ");
+      //
+      //
+      //       if(checkInt==true){
+      //         console.log(`Good evening! ${userName}`);
+      //       }
+      //     }
+      //
+      //
+      // }
+      //     console.log(getName());
+    */
+      console.log(`JS - PROJECT 2`);
+
+      function greeting(name) {
+        console.log(`a)`);
+        console.log(`Good evening ${name}`);
+        checkName(name);
+      }
+
+      greeting(prompt("Enter a name: "));
+
+      function checkName(name) {
+        console.log(`b)`);
+        if (name == null | name == '') {
+          console.log(`You didn't write a name!`);
+        } else {
+          console.log(`Welcome ${name} to the class!`);
+        }
+      }
+
+      function checkNum(num) {
+        console.log(`c)`);
+        if (num == null | num == '') {
+          return console.log(`You didn't write a number!`);
+        } else if (isNaN(num)){
+          console.log(`Did the user enter a number (T/F)? False`);
+          return false;
+        } else {
+          console.log(`Did the user enter a number (T/F)? True`);
+          return true;
+        }
+      }
+
+      checkNum(prompt("Enter a number: "));
+
+      function lottery(games) {
+        console.log(`d)`);
+        min = Math.ceil(0);
+        max = Math.floor(99);
+        const winning_numbers = [];
+        for (var i = 0; i < 5; i++) {
+          winning_numbers.push(Math.floor(Math.random() * (max - min) + min));
+        }
+        console.log(`Winning Numbers: ${winning_numbers}`);
+        for (var i = 1; i < parseInt(games)+1; i++) {
+          const selected_numbers = [];
+          for (var j = 0; j < 5; j++) {
+            selected_numbers.push(Math.floor(Math.random() * (max - min) + min));
+          }
+          console.log(`Selected Numbers No.${i}: ${selected_numbers}`);
+        }
+      }
+
+      lottery(prompt("Enter the number of games you'd like to play: "));
+      
+    </script>
+  </body>
+</html>

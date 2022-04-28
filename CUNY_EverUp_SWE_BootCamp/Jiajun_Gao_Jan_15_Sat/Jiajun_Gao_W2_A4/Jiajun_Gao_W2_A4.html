@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+      var day = true;
+      var night = false;
+      if(night){
+        console.log('The statment is', day);
+      }
+
+      var num = prompt("Enter a number: ");
+      num = pareseInt(num);
+
+      var num1 = 5;
+      var num2 = -2;
+
+      if(num1 == num2) {
+        console.log(`${num1} is equal to ${num2}`);
+      }
+      else if (num1 > num2) {
+        console.log(`${num1} is greater than ${num2}`);
+      }
+      else if (num1 < num2) {
+        console.log(`${num1} is less than ${num2}`);
+      }
+      else {
+        console.log(`CANNOT compare ${num1} with ${num2}`);
+      }
+
+      // if(num >= 10 && num <= 20){
+      //   num = num * 3;
+      //   console.log(`The number is triple = ${num}`);
+      // }
+      // else{
+      //   num = num * 2;
+      //   console.log(`The number is double = ${num}`);
+      // }
+      //   console.log(`Message for outside the statement. The number is ${num}`);
+      var animals = ['dog', 'cat', 'fish'];
+      var selAnimal = 'horse';
+
+      switch (selAnimal) {
+        case 'dog':
+          console.log('Selected animal is a dog');
+          break;
+        case 'cat':
+          console.log('Selected animal is a cat');
+          break;
+        case 'fish':
+          console.log('Selected animal is a fish');
+          break;
+        default:
+          console.log('Teh selected animal is not listed');
+      }
+    */
+    console.log("WEEK 2 - ACTIVITY 4");
+    console.log("a)");
+    var input1 = prompt("Please enter a number or string: ");
+    if (input1 < 0) {
+      console.log(`${input1} is a negative number`);
+    } else if (input1 > 0) {
+      console.log(`${input1} is a positive number`);
+    } else if (input1 == 0) {
+      console.log(`${input1} is neither positive nor negative`);
+    } else {
+      console.log(`${input1} is a string`);
+    }
+
+    console.log("b)");
+    var input2 = prompt("Pick a color (type a, b, or c): \na) Red \nb) Blue \nc) Green");
+    switch (input2.toUpperCase()) {
+      case 'A':
+        console.log(`The pick color is Red`);
+        break;
+      case 'B':
+        console.log(`The pick color is Blue`);
+        break;
+      case 'C':
+        console.log(`The pick color is Green`);
+        break;
+      default:
+        console.log(`Invalid`);
+    }
+    </script>
+  </body>
+</html>

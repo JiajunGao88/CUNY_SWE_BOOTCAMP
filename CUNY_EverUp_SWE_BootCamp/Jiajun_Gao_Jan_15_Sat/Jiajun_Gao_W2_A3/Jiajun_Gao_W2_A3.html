@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Week 2 Activity 3</title>
+  </head>
+  <body>
+    <h1>Jiajun Gao</h1>
+    <script type="text/javascript">
+    /*
+      var n1 = "New York City New Yorker";
+      var n3 = n1.toUpperCase();
+      var n3 = n1.toLowerCase();
+      var search1 = n1.search("Yo");
+      var sub1 = n1.search('City');
+      var sub2 = n1.substr(sub1, 4);
+      var replace1 = n1.replace('City, State');
+
+      // Arrays
+      var fruits;
+      fruits = ['orange', 'apple', 'peach'];
+      var color = ['red', 'green', 'blue', 'white'];
+      var mixedArray = new Array('peter', false, -8);
+
+      // subArrays
+      var meals = ['breakfast', ['egg', 'bread', 'juice'], 'lunch'];
+      var country = ['America', ['Canada', 'USA', 'Mexico', 'Brasil'], 'Europe', ['Spain', 'France', 'Italy']];
+      var country1 = 'United States of America';
+      var nCountry = country1[9];
+
+      // properties and methods
+      // methods that update the array information directly with
+      var animal = ['cat', 'dog', 'fish', 'bird'];
+      var animals = animal
+      console.log("Before reverse :", animal);
+      //
+      // Reverse method
+      animal.reverse();
+      console.log("After reverse :", animal);
+      //
+      // Remove the first value of the animal using method "shift"
+      animal.shift();
+      console.log("After shift method :", animal);
+      //
+      // Remove the last value of the animal using method "pop"
+      animal.pop()
+      console.log("After pop method :", animal);
+      // Add comma-separated list of values to the front of the array using method
+      // "unshift"
+      animal.unshift('TURTLE', 'RAT');
+      console.log("After unshift method :", animal);
+      //
+      //add comma-separted list values at the end of the array using method "push"
+      animal.push('GOAT');
+      console.log("After push method :", animal);
+
+      var user = prompt('Enter an animal: ');
+      animals.push(user);
+
+      var indexAnimal = animals.indexOf('fish', 1);
+      console.log('Week 2 Activity 3');
+    */
+      var array1 = new Array(20, 'red', false, 'pink', 3);
+      console.log(`a) Array1 initial values: ${array1}`);
+
+      var firstColor = prompt("Enter a color: ");
+      array1.push(firstColor);
+      console.log(`b) Array1 with a new color: ${array1}`);
+
+      var firstNum = prompt("Enter a number: ");
+      array1.unshift(firstNum);
+      console.log(`c) Array1 with a new color: ${array1}`);
+
+      var copyArray = array1.reverse();
+      console.log(`d) Array1: ${array1}`);
+      console.log(`copyArray1: ${copyArray}`);
+
+      copyArray[3] = array1[1];
+      console.log(`e) Updated copyArray array: ${copyArray}`);
+
+    </script>
+  </body>
+</html>

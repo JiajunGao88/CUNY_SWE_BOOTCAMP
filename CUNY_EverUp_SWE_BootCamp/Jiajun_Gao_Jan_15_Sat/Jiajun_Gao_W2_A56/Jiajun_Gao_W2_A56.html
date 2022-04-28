@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+      for (var i = 0; i < 10; i++) {
+        console.log(`Print number ${i}`);
+      }
+      var cars = ['Mazda', 'Tesla', 'Dodge', 'BMW']
+
+      for (var i = 0; i < cars.length; i++) {
+        console.log(`Car ${i+1} = ${cars[i]}`);
+      }
+
+      for (var eachItem of cars) {
+        console.log(eachItem);
+      }
+
+      var food = ['salad', 'pizza', 'tofu', 'chesse burger'];
+      for (var i = 0; i < food.length; i++) {
+        if(i%2 == 0)
+          console.log(`I want some ${food[i]}`);
+          i++;
+      }
+
+      var i = i;
+      while (i<=5) {
+        console.log(`The number is ${i}`);
+        i++;
+      }
+
+      var numE = prompt(`Enter a number greater than 10: `);
+      numE = parseInt(numE);
+
+      while (numE<10) {
+        numE = prompt(`${numE} is less than 10. Enter another number: `)
+        numE = parseInt(numE);
+      }
+      console.log(`The entered number is ${numE}`);
+    */
+    console.log(`WEEK 2 - ACTIVITY 5`);
+    var inputNum1 = prompt("Enter a number: ");
+    while (isNaN(inputNum1)) {
+      inputNum1 = prompt(`${inputNum1} is not a number. Enter a number again: `);
+    }
+    console.log(`You entered ${inputNum1}`);
+
+    console.log(`WEEK 2 - ACTIVITY 6`);
+    var inputNum2 = prompt("Enter a number between 1 and 10: ");
+    while (isNaN(inputNum2)) {
+      inputNum2 = prompt(`${inputNum2} is not a number. Enter a number again: `);
+    }
+    if (inputNum2 > 10) {
+      console.log(`${inputNum2} is greater than 10`);
+    } else if (inputNum2 < 1) {
+      console.log(`${inputNum2} is a negative number`);
+    } else {
+      for (var i = inputNum2; i < 16; i++) {
+        console.log(`Number is ${i} now`);
+      }
+    }
+    </script>
+  </body>
+</html>

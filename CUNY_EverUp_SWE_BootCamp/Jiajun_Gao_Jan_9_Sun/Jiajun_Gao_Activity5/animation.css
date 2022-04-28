@@ -1,0 +1,236 @@
+.container{
+  border: ridge 50px blue;
+  width: 700px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+.backImg{
+  width: 100%;
+  height: 100%;
+}
+.car{
+  width: 150px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  animation-name: slideCar;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes slideCar {
+  from{transform: translateX(0px);}
+  to{transform: translateX(-550px);}
+}
+.cloud1, .cloud2, .cloud3{
+  position: absolute;
+  animation-name: cloudsMove;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.cloud1{
+  width: 100px;
+  top: 0px;
+  left: -100px;
+  animation-duration: 4s;
+}
+.cloud2{
+  width: 250px;
+  top: 20px;
+  left: -200px;
+  animation-duration: 7s;
+}
+.cloud3{
+  width: 200px;
+  top: 0px;
+  left: -150px;
+  animation-duration: 5s;
+}
+@keyframes cloudsMove {
+  0%{transform: translateX(50px); opacity: 0.9;}
+  100%{transform: translateX(650px); opacity: 0.9;}
+}
+.sun{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  animation: rotationFlashing 30s forwards;
+}
+@keyframes rotationFlashing {
+  0%{transform: rotate(45deg); opacity: 0.9;}
+  25%{opacity: 0.2);}
+  50%{transform: rotate(45deg);}
+  75%{opacity: 0.8;}
+  100%{transform: rotate(360deg); opacity: 0.3; left: 650px;}
+}
+.zoomSun{
+  position: absolute;
+  width: 200px;
+  left: 300px;
+  top: 200px;
+  animation: zoom 8s forwards;
+}
+@keyframes zoom {
+  0%{transform: scale(0.3);}
+  30%{transform: rotate(180deg);}
+  50%{transform: scale(2);}
+  80%{transform: rotate(-180deg);}
+  100%{transform: scale(1);}
+}
+.title{
+  text-align: center;
+  color: white;
+  padding: 10px 50px;
+  background-color: skyblue;
+}
+.activityContainer{
+  width: 1280px;
+  height: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+.backImg_activity{
+  width: 100%;
+  height: 100%;
+  animation-name: backImg_a_a;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+@keyframes backImg_a_a {
+  0%{opacity: 1;}
+  50%{opacity: 1; filter: invert(0%);}
+  50.5%{filter: invert(100%);}
+  51%{filter: invert(0%);}
+  51.5%{filter: invert(100%);}
+  52%{filter: invert(0%);}
+  100%{filter: invert(0%); opacity: 1;}
+}
+.camera{
+  position: absolute;
+  width: 250px;
+  bottom: 200px;
+  left: 350px;
+  animation-name: zoomCamera;
+  animation-fill-mode: forwards;
+  animation-duration: 10s;
+}
+@keyframes zoomCamera {
+  0%{transform: scale(0); opacity: 1;}
+  10%{transform: scale(1); opacity: 1;}
+  50%{transform: scale(1); opacity: 1;}
+  51%{opacity: 0;}
+  100%{opacity: 0;}
+}
+.cheese{
+  position: absolute;
+  width: 200px;
+  top: 70px;
+  left: 400px;
+  animation-name: zoomCheese;
+  animation-fill-mode: forwards;
+  animation-duration: 10s;
+}
+@keyframes zoomCheese {
+  0%{transform: scale(0); opacity: 0;}
+  10%{transform: scale(0); opacity: 0;}
+  20%{transform: scale(1); opacity: 1;}
+  40%{transform: scale(1); opacity: 1; filter: brightness(1)}
+  50%{transform: scale(1); opacity: 1; filter: brightness(4);}
+  51%{opacity: 0;}
+  100%{opacity: 0;}
+}
+.zoomHeart1, .zoomHeart2, .zoomHeart3, .zoomHeart4, .zoomHeart5, .zoomHeart6, .zoomHeart7, .zoomHeart8, .zoomHeart9, .zoomHeart10, .zoomHeart11, .zoomHeart12{
+  animation-name: heartsMove;
+  animation-duration: 0.35s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.zoomHeart1{
+  animation-delay: 5.6s;
+  width: 170px;
+  top: 106px;
+  left: 50px;
+}
+.zoomHeart2{
+  animation-delay: 5.51s;
+  width: 140px;
+  top: 400px;
+  left: 200px;
+}
+.zoomHeart3{
+  animation-delay: 5.54s;
+  width: 130px;
+  top: 170px;
+  left: 340px;
+}
+.zoomHeart4{
+  animation-delay: 5.61s;
+  width: 100px;
+  top: 570px;
+  left: 430px;
+}
+.zoomHeart5{
+  animation-delay: 5.56s;
+  width: 160px;
+  top: 250px;
+  left: 520px;
+}
+.zoomHeart6{
+  animation-delay: 5.53s;
+  width: 60px;
+  top: 40px;
+  left: 600px;
+}
+.zoomHeart7{
+  animation-delay: 5.54s;
+  width: 120px;
+  top: 120px;
+  left: 640px;
+}
+.zoomHeart8{
+  animation-delay: 5.51s;
+  width: 55px;
+  top: 570px;
+  left: 700px;
+}
+.zoomHeart9{
+  animation-delay: 5.53s;
+  width: 180px;
+  top: 360px;
+  left: 790px;
+}
+.zoomHeart10{
+  animation-delay: 5.54s;
+  width: 140px;
+  top: 540px;
+  left: 888px;
+}
+.zoomHeart11{
+  animation-delay: 5.63s;
+  width: 66px;
+  top: 227px;
+  left: 950px;
+}
+.zoomHeart12{
+  animation-delay: 5.52s;
+  width: 200px;
+  top: 310px;
+  left: 1090px;
+}
+@keyframes heartsMove {
+  0%{opacity: 0.9; position: absolute;}
+  100%{opacity: 0;}
+}
+.footer{
+  text-align: center;
+    font-size: 18px;
+}

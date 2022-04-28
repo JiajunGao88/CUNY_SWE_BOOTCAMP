@@ -1,0 +1,139 @@
+*{box-sizing: border-box;}
+.title{
+  background-color: lightgreen;
+  text-align: center;
+}
+.navTabs a{
+  background: lightblue;
+  text-align: center;
+  text-decoration: none;
+  color: purple;
+}
+.navTabs a:hover{
+  background-color: purple;
+  text-align: center;
+  color: lightgray;
+}
+.mainImg{
+  height: auto;
+}
+.mainImg img{
+  height: 100%;
+  width: 100%;
+}
+.info{
+  background: lightblue;
+  height: auto;
+}
+.info_big{
+  display: none;
+}
+.socialMedia{
+  background-color: lightgreen;
+}
+/* --- Laptop or Desktio size view 901px - above --- */
+@media only screen and (min-width: 901px) {
+  body{
+    background-color: yellow;
+  }
+  .title{
+    padding: 20px;
+  }
+  .navTabs{
+    width: 20%;
+    float: left;
+  }
+  .navTabs a{
+    width: 100%;
+    display: block;
+    padding: 20px 0px;
+    border-bottom: solid white 10px;
+  }
+  .mainImg{
+    width: 40%;
+    height: 85%;
+    float: left;
+    margin-left: 5%;
+  }
+  .container{
+    height: 250px;
+    overflow: hidden;
+  }
+  .info{
+    display: none;
+  }
+  .info_big{
+    width: 30%;
+    height: 85%;
+    float: right;
+    background: lightblue;
+    display: block;
+  }
+
+  .socialMedia{
+    height: 100px;
+    margin-top: 2%;
+  }
+}
+/* --- tablet or medium size view 450px - 900px --- */
+@media only screen and (max-width: 900px) and (min-width: 450px) {
+  body{
+    background-color: yellow;
+  }
+  .title{
+    padding: 20px;
+  }
+  .navTabs{
+    width: 45%;
+    float: left;
+  }
+  .navTabs a{
+    width: 100%;
+    display: block;
+    padding: 20px 0px;
+    border-bottom: solid white 10px;
+  }
+  .mainImg{
+    width: 45%;
+    height: 85%;
+    float: left;
+    margin-left: 5%;
+  }
+  .container{
+    height: 250px;
+    overflow: hidden;
+  }
+  .info{
+    padding: 20px 30px;
+  }
+  .socialMedia{
+    height: 100px;
+    margin-top: 2%;
+  }
+}
+/* --- smartphone view - small view --- */
+@media only screen and (max-width: 450px) {
+  .title{
+    padding: 20px;
+  }
+  .navTabs a{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    font-size: 1.5em;
+    border-bottom: solid white 5px;
+  }
+  .info{
+    height: 200px;
+    padding: 10px;
+    font-size: 1.1em;
+  }
+  .socialMedia{
+    height: 100px;
+    margin-top: 15px;
+  }
+}
+.footer{
+  text-align: center;
+    font-size: 18px;
+}
